@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FeedBack</title>
+
+        <style>
+            .title {
+                text-align: center;
+            }
+
+            .Name {
+                font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #1d1d1f;
+                letter-spacing: -0.03em;
+                line-height: 1.1;
+                margin: 0 0 0.25rem 0;
+            }
+
+            .FamousSentence {
+                font-family: 'Georgia', 'Times New Roman', serif;
+                font-size: 1.25rem;
+                font-weight: 400;
+                color: #555;
+                font-style: italic;
+                line-height: 1.8;
+                letter-spacing: 0.01em;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 1.5rem 2rem;
+                border-radius: 0 6px 6px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">Feedback</h1>
+        <hr>
+        <form action="https://formspree.io/f/meevaarj" method="POST">
+            <p>Qual é o seu nome?</p>
+            <input type="text" name="nome" placeholder="Nome">
+
+            <p>Qual é que é o seu email?</p>
+            <input type="email" name="email" placeholder="Email">
+            
+            <p>De onde é que ouviu este site?</p>
+
+            <input type = "radio" name="escolha" value="amigos" id="amigos">
+            <label for ="Amigos">Amigos</label>
+
+            <input type = "radio" name="escolha" value="RedesSociais" id="RedesSociais">
+            <label for ="Redes Sociais">Redes Sociais</label>
+
+            <input type = "radio" name="escolha" value="saynothing" id="saynothing">
+            <label for ="nada">Prefiro não dizer</label>
+
+            <p>Quais são os seu interesses?</p>
+
+            <input type="checkbox" name="interesses" value="redes" id="redes">
+            <label for="Redes">Redes e Comunicações</label>
+
+            <input type="checkbox" name="interesses" value="programacao" id="programacao">
+            <label for="Programação">Programação</label>
+
+            <input type="checkbox" name="interesses" value="hardware" id="hardware">
+            <label for="Hardware">Hardware</label>
+            <p></p>
+
+            <label for="comment">Insira o seu comentário:</label>
+            <p></p>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Escreva aqui o seu comentário"></textarea>
+            <p></p>
+            <input type="hidden" name="_subject" value="Novo Feedback">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            <p></p>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4729.994096882394!2d-8.809728614921621!3d39.74607724542738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22736babbc5e2b%3A0x3b1d0d49e6b4c24f!2sES%20Domingos%20Sequeira!5e1!3m2!1sen!2spt!4v1773931401948!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <hr>
+            <h2>Downloads</h2>
+            <a href="../Downloads/cSharp.zip" download>Uns projetos em C#</a>
+            <hr>
+                <h2 class="Name">Steve Jobs</h2>
+                <a class="FamousSentence">The only way to do great work is to love what you do</a>
+        </form>
+    </body>
+</html>

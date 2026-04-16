@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal</title>
+
+        <style>
+            button {
+                    padding: 10px 15px;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    margin: 5px;
+                }
+
+                button:nth-child(even) {
+                    background-color: #2a9d8f; 
+                }
+
+                button:nth-child(odd) {
+                    background-color: #264653;
+                }
+
+                button:hover {
+                    background-color: #e76f51; 
+                }
+
+            .frameD {
+                width: 1200px;
+                height: 800px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <div style="display: flex; height: 100vh;">
+        <div style="flex: 0.1; padding: 20px;">
+            <a href ="../index.html" target="PagDireita"><button>Menu</button></a>
+            <p></p><a href ="galeria.html" target="PagDireita"><button>Projetos</button></a>
+            <p></p><a href ="contacto.html" target="PagDireita"><button>FeedBack</button></a>
+            <p></p><a href ="../index.html"><button>Mudar Modo</button></a>
+        </div>
+            <div style="width: 2px; background: #ccc;"></div>
+        <div style="flex: 1; padding: 20px;">
+            <iframe name ="PagDireita" src="../index.html" class="frameD"></iframe>
+
+        </div>
+</div>
+    </body>
+</html>
